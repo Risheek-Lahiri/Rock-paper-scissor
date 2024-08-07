@@ -1,0 +1,119 @@
+/* General Reset and Dark Mode Background */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Light grey text for better readability */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme switch */
+  }
+  
+  /* Header Styling */
+  h1 {
+     background: linear-gradient(135deg, #1c1c1c, #383838);
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    
+    transition: background-color 0.3s;
+  }
+  
+  /* Choice Buttons Styling */
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4f46e5; /* Add a border to the choices */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #4f46e5; /* Hover effect with a new color */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Image Styling */
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0; /* Border around images */
+    transition: border-color 0.3s;
+  }
+  
+  img:hover {
+    border-color: #4f46e5; /* Change border color on hover */
+  }
+  
+  /* Choices Container Styling */
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Scoreboard Styling */
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+    color: #4f46e5; /* Accent color for score */
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  /* Message Container Styling */
+  .msg-container {
+    margin-top: 5rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  #msg {
+    background-color: #4f46e5;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: pulse 2s infinite; /* Pulse animation for the message */
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
